@@ -1,0 +1,145 @@
+.card-wrapper {
+    position: relative;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    height: 450px;
+    padding: 12px 28px;
+    border-radius: 28px;
+    margin: 0 20px;
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: auto;
+}
+
+.card::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--Yellow-color);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-60%, -40%);
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.header-card {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.product-item {
+    margin-bottom: 80px;
+    z-index: -1;
+}
+
+.image-product {
+    border-radius: 28px;
+    width: 100%;
+    height: 300px;
+}
+
+.image-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-logo {
+    width: 40px;
+    height: 28px;
+}
+
+.img-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.title-card {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+.title-product {
+    text-align: left;
+}
+
+.description-product {
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    color: gray;
+}
+
+.title-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.add-btn {
+    /* display: inline-block; */
+    width: 100px;
+    height: 40px;
+    background-color: var(--Yellow-color);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+}
+
+.add-btn p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cart-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.check-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Yellow-color);
+    cursor: pointer;
+}
+
+.check-btn img {
+    width: 100%;
+    height: 70%;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        width: 70%;
+        height: 500px;
+    }
+}
