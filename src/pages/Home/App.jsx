@@ -12,7 +12,7 @@ function App() {
     isAddedToCart,
     deleteFromCart,
     decreaseQuantity,
-    increaseQuantity
+    increaseQuantity,
   } = useHome();
 
   return (
